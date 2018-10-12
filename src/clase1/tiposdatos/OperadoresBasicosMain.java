@@ -2,7 +2,7 @@ package clase1.tiposdatos;
 
 import java.util.*;
 
-class Main {
+class OperadoresBasicosMain {
 	/**
 	 * String Cadena de texto
 	 * char Caracter
@@ -23,8 +23,10 @@ class Main {
 		double d = 123.0;
 		String str = "Hola Mundo";
 		int i = 10;
+		
 		//imprimir en consola
 		System.out.println(b);
+		
 		//operaciones arimeticas
 		i = i + 1;
 		i = i-2;
@@ -33,15 +35,17 @@ class Main {
 		i= 10%i;
 		i = 10*5;
 		i = 15/2;
+		
 		//if(expresion booleana)
 		if(str=="Hola"){
 			System.out.println("Es mayor a 10");
 		}
+		
 		//for 
 		for( int j=0; j<10; j=j+1 ){
 			System.out.println(i);
 		}
-		
+
 		//while
 		while(d<500){
 			System.out.println(d);
@@ -49,9 +53,13 @@ class Main {
 		}
 		
 		// do while
+		//se ejecuta al menos una vez
+		int cantidadEjecuciones = 0;
 		do{
-			
-		}while(d<500);
+			cantidadEjecuciones++;
+			System.out.println("Ejecucion nro "+cantidadEjecuciones+", d="+d);
+			d=d+100;
+		}while(d<1000);
 		
 		//leer por consola
 		 Scanner in = new Scanner(System.in);
@@ -59,5 +67,4 @@ class Main {
 		 String s = in.nextLine();
 		 System.out.println("Ingresaste: "+s);
 	}
-	
 }
