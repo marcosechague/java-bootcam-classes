@@ -1,6 +1,6 @@
 package clase2.clases;
 
-public class MainClases {
+public class ClasesMain {
 	
 	public static void main(String[] args){
 		
