@@ -1,13 +1,12 @@
 package clase3.clases.avanzado;
 
+/**
+ * @author mechague
+ * Disenho de clases
+ */
 // Encapsular
 // Java bean
 public class Cliente {
-	
-	// private --solo clases
-	// default -- solo lo que estan en el mismo paquete
-	// protected -- en el mismo paquete e hijos
-	// public -- todos
 	
 	private String nombre ;
 	private String apellido;
@@ -17,7 +16,7 @@ public class Cliente {
 	public Cliente () {
 	}
 	
-	//sobrecarga
+	//sobrecarga de contructor
 	public Cliente(String nombre, String apellido) {
 		this.nombre = nombre;
 		this.apellido = apellido;
